@@ -14,10 +14,13 @@ WHAT TO INCLUDE IN OUR FIRST RELEASE:
 
 ● Landing Page should allow the user to view publicly available and active used product listings
 
-● The site should perform basic CRUD (Create, Read, Update and Delete/Disable) operations on the main type of site objects
+● The site should perform basic CRUD (Create, Read, Update and Delete/Disable) operations on the main type of site objects. This means add to and remove object from database. 
 
 WHAT IS NOT REQUIRED:
+
 ● Authentication.
+
 ● Major emphasis on design; barebone functionality is top priority. 
+
 
 Any question or concerns regarding product development, refer back to this documentation, or send a message on WhatsApp/Microsoft Teams. 
