@@ -9,8 +9,11 @@ DUE: July 16th
 WHAT TO INCLUDE IN OUR FIRST RELEASE:
 
 ● Landing Page should include the Name of the Site and your Team’s Logo
+
 ● Landing Page should allow the user to post a listing for a used product
+
 ● Landing Page should allow the user to view publicly available and active used product listings
+
 ● The site should perform basic CRUD (Create, Read, Update and Delete/Disable) operations on the main type of site objects
 
 WHAT IS NOT REQUIRED:
