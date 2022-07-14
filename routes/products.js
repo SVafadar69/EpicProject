@@ -14,6 +14,8 @@ function requireAuth(req, res, next)
     next();  
 }
 
+/* GET list of used products */
+router.get('/list', productController.usedProducts);
 
 // ----------------------------------------------------------------
 // ADD HERE --> Regisered user can CREATE, EDIT, DELETE ads 
