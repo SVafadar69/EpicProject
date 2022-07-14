@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+
+<body>
+
+  <!-- Main Nav bar  -->  
+  <nav class="topnav">
+    <div class="container-fluid">
+
+        <!-- logo -->
+        <a class="navbar-brand" href="#">
+            <img src="/images/  -----> ADD LOGO FILE HERE -------- " alt="logo" style="width:40px;">
+        </a>
+
+        <!-- search (UPDATE FORM ACTION)-->
+        <div class="search-container">
+            <form action="">
+            <input type="text" placeholder="Search for anything..." name="searchbar">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
+        <!-- signin link -->
+        <% if (typeof userName == 'string' && userName) { %>
+        <a href="/users/signout" onclick="return confirm('Are you sure?')">Sign-Out</a>
+        <% } else { %>
+        <a href="/users/signin">Sign In</a>
+        <% } %>            
+
+        <!-- post ad button -->
+        <a href="/users/signin" class="btn btn-sm btn-info" name="postAd"></i>Post ad</a>
+
+    </div>
+</nav>
+<br>
+<br>
+<br>
