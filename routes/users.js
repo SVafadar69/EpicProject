@@ -22,8 +22,8 @@ router.post('/signin', usersController.signin);//process
 router.get('/signout', usersController.signout);//render
 
 //UPDATE/MODIFY
-router.get('/update/:id', requireAuth, usersController.renderUpdatePage);//render
-router.post('/update/:id', requireAuth, usersController.update);//process
+// router.get('/update/:id', requireAuth, usersController.renderUpdatePage);//render
+// router.post('/update/:id', requireAuth, usersController.update);//process
 
 
 

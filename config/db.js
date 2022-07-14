@@ -1,10 +1,5 @@
 // Do not expose your credentials in your code.
-let atlasDB = "";
-
-// -----------------------------------------------------------------
-// ADD DATABASE ABOVE ^^^^^^
-// -----------------------------------------------------------------
-
+let atlasDB = "mongodb+srv://myappuser:MaajX7F0woW8UhYN@cluster-comp229-elitepr.9lhzsup.mongodb.net/eliteProductDatabase?retryWrites=true&w=majority";
 
 // Database setup
 let mongoose = require('mongoose');
