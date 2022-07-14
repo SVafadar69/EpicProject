@@ -15,34 +15,46 @@
 <body>
 
   <!-- Main Nav bar  -->  
-  <nav class="topnav">
-    <div class="container-fluid">
+  <div class="topnav">
+    <div class="topnav-container">
 
-        <!-- logo -->
+      <!-- logo -->
+      <div class="topnav-logo">
         <a class="navbar-brand" href="#">
-            <img src="/images/  -----> ADD LOGO FILE HERE -------- " alt="logo" style="width:40px;">
+            <img src="/images/logo.jpg" alt="logo" style="width:40px;">
         </a>
+      </div>
 
-        <!-- search (UPDATE FORM ACTION)-->
-        <div class="search-container">
-            <form action="">
-            <input type="text" placeholder="Search for anything..." name="searchbar">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </div>
+      <!-- search (UPDATE FORM ACTION)-->
+      <div class="topnav-search">
+        <form action="">
+        <input type="text" placeholder="Search for anything..." name="searchbar">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
 
-        <!-- signin link -->
+      <!-- register link -->
+      <div class="topnav-register">
+        <h4><span><a href="/users/register">Register</a></span> or </h4> 
+      </div>
+
+      <!-- signin link -->
+      <div class="topnav-signIn">
         <% if (typeof userName == 'string' && userName) { %>
-        <a href="/users/signout" onclick="return confirm('Are you sure?')">Sign-Out</a>
+          <a href="/users/signout" onclick="return confirm('Are you sure?')">Sign-Out</a>
         <% } else { %>
-        <a href="/users/signin">Sign In</a>
+          <a href="/users/signin">Sign In</a>
         <% } %>            
+      </div>
 
-        <!-- post ad button -->
+      <!-- post ad button -->
+      <div class="topnav-postAd">
         <a href="/users/signin" class="btn btn-sm btn-info" name="postAd"></i>Post ad</a>
+      </div>
 
     </div>
-</nav>
+  </div>
+
 <br>
 <br>
 <br>
