@@ -20,3 +20,46 @@ module.exports.usedProducts = function(req, res, next) {
         // }
     });
 }
+
+// Renders the Add form using the add_edit.ejs template
+module.exports.displayAddPage = (req, res, next) => {
+    
+    let newItem = ProductModel();
+
+    res.render('products/add_edit', {
+        title: '',
+        product: newItem
+    })        
+}
+
+// Processes the data submitted from the Add form
+module.exports.processAddPage = (req, res, next) => {
+
+    //REQUEST
+    let newItem = ProductModel({
+        _id: req.body.id,
+        category: req.body.category,
+        condition: req.body.condition,
+        title: req.body.title,
+        description: req.body.description,
+        price: req.body.price,
+        priceNum: req.body.priceNum,
+        phoneNumber: req.body.phoneNumber
+    });
+
+    //RESPOND
+    ProductModel.create(newItem, (err, item) =>{
+        if(err)
+        {
+            console.log(err);
+            res.end(err);
+        }
+        else
+        {
+            //CAN ADD if --> in case item already exists...
+            console.log(item);
+            res.redirect('/products/add');
+        }
+    });
+
+}

@@ -9,19 +9,12 @@ let productModel = mongoose.Schema(
         title         :String,
         description   :String,
         price         :Number,
+        priceNum      :Number,//option entered if '$' selected
         phoneNumber   :Number
-        // ,
-        // imageURL      :[{type:String}],  //------------> array of images
-        // created_on    :{ type: Date },
-        // updated_on    :{ type: Date, default: Date.now },
-        // message: {
-        //     question:[{type:String}], //-----------> array of questions
-        //     answer:[{type:String}]    //-----------> array of answers
-        // }    
+        //HAVE TO ADD IMAGES!!!
+        //QUESTIONS
+        //ANSWERS 
     }, 
-    // {
-    //     strict: false
-    // },     
     {
         collection: "usedProduct"
     });
