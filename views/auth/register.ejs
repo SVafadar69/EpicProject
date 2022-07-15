@@ -1,4 +1,4 @@
-<% include ../partials/header.ejs %>
+<% include ('../partials/header'); %>
 
 <div class="container">
     <div class="row">
@@ -55,7 +55,7 @@
                     <label>Province:</label>
                     <select name="user.address.province">
                         <% var options = [ "AB", "BC", "MB", "NB", "NL", "NT", "NS", "NU", "ON", "PE", "QC", "SK", "YT" ]; %>
-                        <% for(var i = 0; options.length; i++) { %>
+                        <% for(var i = 0; i<options.length; i++) { %>
                           <option value='<%= i %>'><%= i %></option>
                         <% } %>
                     </select>
@@ -83,4 +83,4 @@
     </div>
 </div>
 
-<% include ../partials/footer.ejs %>
+<%- include ('../partials/footer'); -%>

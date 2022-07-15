@@ -123,14 +123,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* footer-container is a nested grid within the footer, with 7 columns */
-.topnav-container { 
+/* .topnav-container { 
   grid-column: 2 / 3;
   display: grid; 
   
   /* ACTING AS A GRID CONTAINER */ 
   grid-template-columns: 15% 45% 10% 10% 10% 10%; 
   grid-template-areas: "logo search . register signIn postAd";
-}
+} */
 
 /* PAGE LINKS */
 .topnav a {
@@ -303,17 +303,17 @@ h1, h2, h3, h4, h5, h6 {
 /* -----------------FOOTER----------------- */
 
 /* footer has 3 columns and 2 rows */
-.footer { 
+/* .footer { 
   color: #fff; 
   background: #000; 
   padding: 4em 0; 
   display: grid; 
   grid-template-columns: 7vw 1fr 7vw; 
   grid-template-rows: auto auto;
-}
+} */
 
 /* footer-container is a nested grid within the footer, with 3 columns and 2 rows */
-.footer-container { 
+/* .footer-container { 
   grid-column: 2 / 3;
   display: grid; 
   
@@ -321,12 +321,12 @@ h1, h2, h3, h4, h5, h6 {
   grid-template-columns: 1fr 1fr 2fr; 
   grid-template-rows: auto auto; 
   grid-template-areas: "logo . navigation" "social . newsletter";
-}
+} */
 
 
 
 /* LOGO */
-.footer-logo img{
+/* .footer-logo img{
   height:70px;
   width: 70px;
   float:left;
@@ -334,18 +334,18 @@ h1, h2, h3, h4, h5, h6 {
 .footer-logo { 
   grid-area: logo;
   align-self: start; 
-} 
+}  */
 
 
 /* NAVLINKS */
-.navlinks { 
+/* .navlinks { 
   grid-area: navigation; 
   align-self: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   /* grid-auto-rows: minmax(100px, auto);  */
-} 
+/* } 
 .navlinks-heading{
   grid-column: 1 / 5;
   grid-row: 1;
@@ -365,14 +365,14 @@ h1, h2, h3, h4, h5, h6 {
 .navlinks-contact{
   grid-column: 4 / 5;
   grid-row: 2;
-}
+} */
 
 
 
 
 
 /* SOCIAL */
-.social 
+/* .social 
 { 
   grid-area: social;
   align-self: end;
@@ -400,11 +400,11 @@ h1, h2, h3, h4, h5, h6 {
   justify-self: left;
   grid-row: 1; 
 }
-
+ */
 
 
 /* NEWSLETTER */
-.newsletter { 
+/* .newsletter { 
   grid-area: newsletter; 
   align-self: end; 
 }
@@ -435,25 +435,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 .newsletter .text-input button:hover {
   background: #ccc;
-}
+} */ 
 
 /* .text-input input { 
   border-radius: 0; 
 }  */
 
-.footer a { 
+/* .footer a { 
   color: #fff; 
-} 
+}  */
 
 
 
 /* BOTTOM-LINE */
-.bottom-line { 
+/* .bottom-line { 
   background-color: #444554; 
   color: #fff;
   float: bottom;
 }
 .bottom-line p { 
   margin-left: 2%;
-}
+} */
 
