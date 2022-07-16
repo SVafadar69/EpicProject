@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/@fortawesome/fontawesome-free/css/all.min.css' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/stylesheets/header.css">
+  <link rel="stylesheet" href="/stylesheets/productList.css">
+</head>
+<body>
+
+<%- include ('../partials/header'); -%>
+
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>Electronic Gadgets</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/Electronics.jpg" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h1>Baby Product</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/babyProductImage.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h1>Clothings</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/clothingImage.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h1>Books</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/book.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>Health & Personal</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/healthandpersonal-image.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h1>Gaming Products</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/gamingProduct.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h1>Kitchen Product</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/kitchenProduct.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h1>Shoes</h1>
+      <a class="img-container" href="#">
+        <img class="imgview" src="/images/shoes.png" width="600" height="300" >
+      </a>
+      <p>Shop Now</p>
+    </div>
+  </div>
+</div>
+  
+<%- include ('../partials/footer'); -%>
+</body>
+
+</html>
