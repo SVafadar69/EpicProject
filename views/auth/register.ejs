@@ -1,10 +1,12 @@
-<% include ('../partials/header'); %>
+<%- include ('../partials/header'); -%>
 
-<div class="container">
+<div class="container-add">
     <div class="row">
 
         <div class="offset-md-3 col-md-3">
             <h1><%= title %></h1>
+            <hr>
+            <br>
 
             <% for(var i in messages) { %>
                 <div class="flash"><%= messages[i] %></div>
@@ -76,12 +78,12 @@
                     <label>Postal Code:</label>
                     <input type="text" name="postal" value="<%= user.postal %>" class="form-control" placeholder="Postal Code"/>
                 </div>
-
+                <br>
                 <div class="form-group">
-                    <label>Sign-up for Exclusive weekly deals and to stay in the loop!</label>
-                    <input type="checkbox" name="newsletter" value="<%= user.newsletter %>" class="form-control"/>
+                    <input type="checkbox" name="newsletter" value="<%= user.newsletter %>" class="form-control" checked/>
+                    <label> Sign-up for Exclusive weekly deals and to stay in the loop!</label>
                 </div>
-
+                <br>
 
                 <br>
                 

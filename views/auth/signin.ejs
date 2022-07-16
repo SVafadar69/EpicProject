@@ -1,10 +1,11 @@
 <%- include ('../partials/header'); -%>
 
-<div class="container">
+<div class="container-signIn">
     <div class="row">
 
         <div class="offset-md-3 col-md-3">
             <h1><%= title %></h1>
+            <hr><br>
             <% for(var i in messages) { %>
                 <div class="flash"><%= messages[i] %></div>
             <% } %>
@@ -30,15 +31,17 @@
                 <br>
 
                 <div class="form-group">
-                    Don't have an account?
+                    <div class="createOne-centered">
+                    <span style="font-size: 16px;">Don't have an account?</span>
                     <a href="/users/register" style="text-decoration: none">                
-                        <i class="fas fa-user-plus"></i> 
-                        Create one now!
+                        <span style="font-size: 16px; color: #0012D7; ">Create one now!</span>
                     </a>
+                </div>
                 </div>
 
             </form>
-            
+        </div>
+        </div>
         </div>
     <div>                      
 </div>

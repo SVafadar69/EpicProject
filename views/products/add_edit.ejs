@@ -1,11 +1,11 @@
-<% include ('../partials/header'); %>
+<%- include ('../partials/header'); -%>
 
-<div class="container">
+<div class="container-add">
     <div class="row">
 
         <div class="offset-md-3 col-md-3">
             <h1><%= title %></h1>
-
+            <hr><br>
             <form action="/products/add" method="post" validate>
 
                 <div class="form-group">
@@ -42,22 +42,29 @@
 
                 <div class="form-group">
                     <label>Description:</label>
-                    <textarea name="description" value="<%= product.description %>" rows="10" cols="150"></textarea>
+                    <textarea name="description" value="<%= product.description %>" rows="10" cols="100"></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>Price:</label>
-                    <input type="radio" <%- product.price == 0 ? "selected" : "dollarAmount" %> value="0">$ <input type="number" name="priceNum" value="<%= product.priceNum %>"/>
-                    <input type="radio" <%- product.price == 1 ? "selected" : "Free" %> value="1">Free<br>
-                    <input type="radio" <%- product.price == 2 ? "selected" : "PleaseContact" %> value="2">Please Contact<br>
-                    <input type="radio" <%- product.price == 3 ? "selected" : "Swap/Trade" %> value="3">Swap/Trade<br>
+                    <div class="div0">
+                    <div class="div1">
+                    <label>Price:</label></div>
+                    <div class="div2">
+                    <input type="radio" name="price" <%- product.price == 0 ? "selected" : "dollarAmount" %> value="0"><span style="font-size: 18px;"> $ </span><input type="number" name="priceNum" value="<%= product.priceNum %>"/><br>
+                    <input type="radio" name="price" <%- product.price == 1 ? "selected" : "Free" %> value="1"> Free<br>
+                    <input type="radio" name="price" <%- product.price == 2 ? "selected" : "PleaseContact" %> value="2"> Please Contact<br>
+                    <input type="radio" name="price" <%- product.price == 3 ? "selected" : "Swap/Trade" %> value="3"> Swap/Trade<br>
+                    </div>
+                </div>
                 </div>
 
                 <div class="form-group">
+                    <div class="div0"><div class="div1">
                     <label>Phone Number:</label>
-                    <p>(optional)</p>
-                    <input type="number" name="phoneNumber" value="<%= product.phoneNumber %>" class="form-control" placeholder="123 456 7890"/>
-                </div>
+                    <p style="margin-top: 5px;">(optional)</p></div>
+                    <div class="div2">
+                        <input type="number" name="phoneNumber" value="<%= product.phoneNumber %>" class="form-control" placeholder="123 456 7890"/>
+                    </div></div></div>
 
                 <br>
                 

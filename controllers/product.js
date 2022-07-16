@@ -7,17 +7,21 @@ module.exports.usedProducts = function(req, res, next) {
     //has two object - one for error(err) and the other for success(usedProduct)
     ProductModel.find((err, usedProducts) => {
         console.log(usedProducts);
-        // if(err)
-        // {
-        //     return console.error(err);
-        // }
-        // else
-        // {
-        //     console.log(usedProducts);
-        //     //send data from atlas db to the webpage
-            
-    
-        // }
+        if(err)
+        {
+            return console.error(err);
+        }
+        else
+        {
+            console.log(usedProducts);
+            //send data from atlas db to the webpage
+           
+            res.render('products/list', {
+                title: 'List Of Used Product', 
+                ProductList: usedProducts
+                
+            })            
+        }
     });
 }
 
@@ -27,7 +31,7 @@ module.exports.displayAddPage = (req, res, next) => {
     let newItem = ProductModel();
 
     res.render('products/add_edit', {
-        title: '',
+        title: 'Create your ad',
         product: newItem
     })        
 }
