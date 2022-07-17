@@ -1,81 +1,40 @@
-<br>
-<br>
-<br>
-<br>
-
-<footer class="footer">
-    <div class = "container-fluid">
-        <nav class="footer-nav">
-            <div class="footer-container">
-
-                <div class="footer-logo">
-                    <!-- <h2>Elite Product</h2> -->
-                    <img class="img-footer" src="/images/logo.png" width="200" height="200">
-                </div>
-
-                <div class="navlinks">
-                    <div class="navlinks-heading" style="font-weight:bolder;">
-                        <h2>Quick Links</h2>
-                    </div>
-
-                    <div class="navlinks-home">
-                        <h4><a href="/">Home</a></h4>
-                    </div>
-
-                    <div class="navlinks-signIn">
-                        <h4><a href="/users/signin">Sign In</a></h4>
-                    </div>
-
-                    <div class="navlinks-register">
-                        <h4><a href="/users/register">Register</a></h4>
-                    </div>
-
-                    <div class="navlinks-contact">
-                        <h4><a href="/contact">Contact</a></h4>
-                    </div>
-                </div>
-
-                <div class="social">
-                    <!-- Facebook -->
-                    <div>
-                        <a style="color: #3b5998;" href="#!" role="button"><i class="fab fa-facebook-f fa-lg"></i></a>
-                    </div>
-                    <!-- Twitter -->
-                    <div>
-                        <a style="color: #55acee;" href="#!" role="button"><i class="fab fa-twitter fa-lg"></i></a>
-                    </div>
-                    <!-- Instagram -->
-                    <div>
-                        <a style="color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram fa-lg"></i></a>
-                    </div>
-                    <!-- Youtube -->
-                    <div>
-                        <a style="color: #ed302f;" href="#!" role="button"><i class="fab fa-youtube fa-lg"></i></a>
-                    </div>
-                    <h3>&copy; Elite Product All Rights Reserved</h3>
-                </div>
-
-                <div class="newsletter">
-                    <p class="newsletter-text">Subscribe to Elite Product Weekly for exclusive deals and coupons</p>
-                    
-                    <div class="text-input">
-                        <form action="">
-                        <input type="text" placeholder="Enter email address">
-                        <button type="submit" class="subscribe-button"> SUBSCRIBE </button>
-                        </form>
-                    </div>
-                
-                </div>
-            </div>
-
-            <div class="bottom-line">
-                <p> 2022 &copy; All rights reserved. COMP229-003 - Group Project</p>
-            </div>
-        </nav>
+<div class="footer">
+    <div class="col-1">
+        <h3>QUICK LINKS</h3>
+        <a href="#">Home</a>
+        <a href="#">Sign In</a>
+        <a href="#">Register</a>
+        <a href="#">Contact</a>
+        <a href="#">Shop</a>
     </div>
-            
+    <div class="col-2">
+        <h3>NEWSLETTER</h3>
+        <form>
+            <input type="email" placeholder="Your Email Address">
+            <br>
+            <button type="submit">SUBSCRIBE NOW</button>
+        </form>
+    </div>
+    <div class="col-3">
+        <h3>CONTACT US</h3>
+        <p>164, Fort Boulevard Road, LS2 9LG<br>Toronto, ON</p>
+        <div class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        
+    </div>
+
     
-</footer>
+    
+</div>
+<div class="bottom-line">
+    <p> 2022 &copy; All rights reserved. COMP229-003 - Group Project</p>
+</div>
 
 <script src="/jquery/dist/jquery.min.js"></script>
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -83,3 +42,5 @@
     var getTitle = "<%= title %>";
 </script>
 <script src="/javascripts/appclient.js"></script>    
+</body>
+</html>
