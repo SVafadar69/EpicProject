@@ -8,7 +8,7 @@ let productModel = mongoose.Schema(
         condition     :String,
         title         :String,
         description   :String,
-        price         :Number,
+        price         :String,
         priceNum      :Number,//option entered if '$' selected
         phoneNumber   :Number
         //HAVE TO ADD IMAGES!!!

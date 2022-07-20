@@ -15,12 +15,12 @@
                     <label>Select Category:</label>
                     <select name="category">
                         <option disabled selected>--select--</option>
-                        <option <%- product.category == 0 ? "selected" : "Clothing" %> value="0">Clothing</option>
-                        <option <%- product.category == 1 ? "selected" : "Furniture" %> value="1">Furniture</option>
-                        <option <%- product.category == 2 ? "selected" : "Electronics" %> value="2">Electronics</option>
-                        <option <%- product.category == 3 ? "selected" : "Outdoor" %> value="3">Outdoor</option>
-                        <option <%- product.category == 4 ? "selected" : "Vehicles" %> value="4">Vehicles</option>
-                        <option <%- product.category == 5 ? "selected" : "Other" %> value="5">Other</option>
+                        <option <%- product.category == 0 ? "selected" : "" %> value="Clothing">Clothing</option>
+                        <option <%- product.category == 1 ? "selected" : "" %> value="Furniture">Furniture</option>
+                        <option <%- product.category == 2 ? "selected" : "" %> value="Electronics">Electronics</option>
+                        <option <%- product.category == 3 ? "selected" : "" %> value="Outdoor">Outdoor</option>
+                        <option <%- product.category == 4 ? "selected" : "" %> value="Vehicles">Vehicles</option>
+                        <option <%- product.category == 5 ? "selected" : "" %> value="Other">Other</option>
                        </select>
                 </div>
 
@@ -28,10 +28,10 @@
                     <label>Condition:</label>
                     <select name="condition">
                         <option disabled selected>--select--</option>
-                        <option <%- product.condition == 0 ? "selected" : "New" %> value="0">Clothing</option>
-                        <option <%- product.condition == 1 ? "selected" : "UsedLikeNew" %> value="1">Used - Like New</option>
-                        <option <%- product.condition == 2 ? "selected" : "UsedGood" %> value="2">Used - Good</option>
-                        <option <%- product.condition == 3 ? "selected" : "UsedFair" %> value="3">Used - Fair</option>
+                        <option <%- product.condition == 0 ? "selected" : "" %> value="New">New</option>
+                        <option <%- product.condition == 1 ? "selected" : "" %> value="UsedLikeNew">Used - Like New</option>
+                        <option <%- product.condition == 2 ? "selected" : "" %> value="UsedGood">Used - Good</option>
+                        <option <%- product.condition == 3 ? "selected" : "" %> value="UsedFair">Used - Fair</option>
                        </select>
                 </div>
 
@@ -50,10 +50,10 @@
                     <div class="div1">
                     <label>Price:</label></div>
                     <div class="div2">
-                    <input type="radio" name="price" <%- product.price == 0 ? "selected" : "dollarAmount" %> value="0"><span style="font-size: 18px;"> $ </span><input type="number" name="priceNum" value="<%= product.priceNum %>"/><br>
-                    <input type="radio" name="price" <%- product.price == 1 ? "selected" : "Free" %> value="1"> Free<br>
-                    <input type="radio" name="price" <%- product.price == 2 ? "selected" : "PleaseContact" %> value="2"> Please Contact<br>
-                    <input type="radio" name="price" <%- product.price == 3 ? "selected" : "Swap/Trade" %> value="3"> Swap/Trade<br>
+                    <input type="radio" name="price" onclick="validate(this)" id="yes"<%- product.price == 0 ? "selected" : "" %> value="dollarAmount"><span style="font-size: 18px;"> $ </span><input type="number" name="priceNum" id="priceNum" value="<%= product.priceNum %>"/><br>
+                    <input type="radio" name="price" id="no"<%- product.price == 1 ? "selected" : "" %> value="Free"> Free<br>
+                    <input type="radio" name="price" id="no"<%- product.price == 2 ? "selected" : "" %> value="PleaseContact"> Please Contact<br>
+                    <input type="radio" name="price" id="no"<%- product.price == 3 ? "selected" : "" %> value="Swap/Trade"> Swap/Trade<br>
                     </div>
                 </div>
                 </div>
