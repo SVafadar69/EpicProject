@@ -26,7 +26,7 @@ function getErrorMessage(err) {
   return message;
 };
 
-//SIGN-IN
+//SIGN-IN --> RENDER
 module.exports.renderSignin = function(req, res, next) {
   if (!req.user) {
     res.render('auth/signin', {
@@ -57,7 +57,7 @@ module.exports.renderRegistrationPage = function(req, res, next) {
   }
 };
 
-//REGISTER
+//REGISTER --> PROCESS
 module.exports.register = function(req, res, next) {
   if (!req.user && req.body.password === req.body.password_confirm) {
     console.log(req.body);
@@ -89,8 +89,10 @@ module.exports.register = function(req, res, next) {
 
 //SIGN-OUT
 module.exports.signout = function(req, res, next) {
-  req.logout();
-  res.redirect('/');
+  req.logout(req.user, err => {
+    if(err) return next(err);
+    res.redirect("/");
+  });
 };
 
 //AUTHENTICATE
@@ -156,3 +158,4 @@ module.exports.update = (req, res, next) => {
         }
     });
 }
+

@@ -39,8 +39,20 @@
 
       <!-- TEMPORARY sign-in button -->
       <div class="topnav-signIn">
-        <a href="/users/signin"></i>SIGN IN</a>
+        <% if (typeof userName == 'string' && userName) { %>
+          <a href="/users/signout" onclick="return confirm('Are you sure?')">Sign-Out</a>
+        <% } else { %>
+          <a href="/users/signin">SIGN IN</a>
+        <% } %>   
+
       </div>
+
+
+     
+
+
+
+
       
     </div>
 

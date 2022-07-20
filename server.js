@@ -101,3 +101,5 @@ const passport = configurePassport();
     debug('Listening on ' + bind);
     console.log(`Express app running on http://localhost:${port}`)
   }
+
+  
